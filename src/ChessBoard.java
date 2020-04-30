@@ -11,16 +11,20 @@ public class ChessBoard {
         for (int i = 0; i < this.length; i++) {
             if (i % 2 == 0) {
                 for (int j = 0; j < this.width; j++) {
-                    System.out.print("*");
-                    {
+                    if (j % 2 == 0) {
+                        System.out.print("*");
+                    }
+                    else {
                         System.out.print(" ");
                     }
                 }
             } else {
                 System.out.println();
                 for (int j = 0; j < this.width; j++) {
-                    System.out.print(" ");
-                    {
+                    if (j % 2 == 0) {
+                        System.out.print(" ");
+                    }
+                    else {
                         System.out.print("*");
                     }
                 }
