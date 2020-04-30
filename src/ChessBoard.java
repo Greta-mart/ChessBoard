@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class ChessBoard {
     int length;
     int width;
