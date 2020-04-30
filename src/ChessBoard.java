@@ -1,7 +1,6 @@
 public class ChessBoard {
     int length;
     int width;
-
     
     ChessBoard(int length, int width) {
         this.length = length;
