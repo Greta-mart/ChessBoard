@@ -13,6 +13,7 @@ public class Main {
                 System.err.println("Argument" + " must be an integer");
                 System.exit(1);
             }
+
         else {
             System.out.println("Please insert width and length after name of class");
             System.exit(1);
