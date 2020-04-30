@@ -1,5 +1,3 @@
-import static java.lang.Integer.parseInt;
-
 public class Main {
     public static void main(String[] args) {
         int length = 0;
