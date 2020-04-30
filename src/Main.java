@@ -3,7 +3,7 @@ public class Main {
         int length = 0;
         int width = 0;
 
-        if (args.length == 2)
+        if (args.length == 2) {
             try {
                 length = Integer.parseInt(args[0]);
                 width = Integer.parseInt(args[1]);
@@ -11,7 +11,7 @@ public class Main {
                 System.err.println("Argument" + " must be an integer");
                 System.exit(1);
             }
-
+        }
         else {
             System.out.println("Please insert width and length after name of class");
             System.exit(1);
