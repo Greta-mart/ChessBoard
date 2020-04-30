@@ -4,17 +4,19 @@ public class main {
     public static void main(String[] args) {
         chessBoard board = new chessBoard();
 
-        int length=0;
-        int width=0;
+        int length = 0;
+        int width = 0;
         if (args.length > 0)
             try {
-            width = Integer.parseInt(args[0]);
-            length = Integer.parseInt(args[1]);
-        }
-        catch (NumberFormatException e) {
+                width = Integer.parseInt(args[0]);
+                length = Integer.parseInt(args[1]);
+            } catch (NumberFormatException e) {
                 System.err.println("Argument" + " must be an integer");
                 System.exit(1);
-        }
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.err.println("The width and length should be more than 0");
+                System.exit(1);
+            }
         else {
             System.out.println("Please insert width and length after name of class");
         }
